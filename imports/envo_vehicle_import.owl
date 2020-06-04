@@ -1,1 +1,489 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/lexmapr/CovMapr/blob/master/imports/envo_vehicle_import.owl#"
+     xml:base="https://github.com/lexmapr/CovMapr/blob/master/imports/envo_vehicle_import.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="https://github.com/lexmapr/CovMapr/blob/master/imports/envo_vehicle_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
+        <rdfs:label xml:lang="en">output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002508 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002508">
+        <rdfs:label>determines</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:label xml:lang="en">entity</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesoscopic physical object</rdfs:label>
+        <rdfs:label>physical object of mesoscopic geological size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002297"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental feature that is, or can be, contained and is predominantly composed of one or a few types of stuff.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An object which is large enough to be visible to humans, but small enough that humans can handle the object (i.e. transport it, examine it, etc) in its entirety with little to no technological assistance.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a legacy class from ENVO&#39;s early versions. It will be depopulated and filled in by inference using a PATO quality. Not to be confused with &quot;mesoscopic&quot; as defined in physics, which deals with objects typically between 10e-6 and 10-8 meters in diameter.</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesoscopic physical object</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002297 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002297">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental feature</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002508"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002508"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity determines an environmental system when its removal would cause the collapse of that system. For example, a seamount determines a seamount environment, acting as its &#39;hub&#39;. This class is currently being aligned to the Basic Formal Ontology. Following this alignment, its definition and the definitions of its subclasses will be revised.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity which determines an environmental system.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00002297</oboInOwl:id>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00003074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003074">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manufactured product</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000993"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000993"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity that has been processed by humans or their technology in any way, including intermediate products as well as final products.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>manufactured good</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000601 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000601">
+        <rdfs:label xml:lang="en">motor vehicle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000610"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A motor vehicle is a vehicle which is propelled by an engine or motor and that does not operate on rails.</obo:IAO_0000115>
+        <rdfs:comment>Subclasses will be added by inference.</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000602 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000602">
+        <rdfs:label xml:lang="en">truck</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000601"/>
+        <obo:IAO_0000115>A truck is a motor vehicle which, as its primary funcion, transports cargo rather than human passangers.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>lorry</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000603">
+        <rdfs:label xml:lang="en">water truck</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000602"/>
+        <obo:IAO_0000115>A water truck is a truck which transports water.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000604">
+        <rdfs:label xml:lang="en">vehicle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003074"/>
+        <obo:IAO_0000115>A vehicle is a mobile machine which transports people or cargo.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000605">
+        <rdfs:label xml:lang="en">car</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000601"/>
+        <obo:IAO_0000115>A car is a wheeled motor vehicle used primarily for the transportation of human passengers. Most definitions of the term specify that cars are designed to run primarily on roads, to have seating for one to eight people, to typically have four wheels, and to be constructed principally for the transport of people rather than goods.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000606">
+        <rdfs:label xml:lang="en">cart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <obo:IAO_0000115>A cart is a vehicle which has two wheels and is designed to transport human passengers or cargo.</obo:IAO_0000115>
+        <rdfs:comment>NB: &quot;[A cart]...is different from a dray or wagon, which is a heavy transport vehicle with four wheels and typically two or more horses, or a carriage, which is used exclusively for transporting humans...Over time, the term &quot;cart&quot; has come to mean nearly any small conveyance, from shopping carts to golf carts, without regard to number of wheels, load carried, or means of propulsion.&quot; https://en.wikipedia.org/wiki/Cart</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000607">
+        <rdfs:label xml:lang="en">animal-drawn cart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000606"/>
+        <obo:IAO_0000115>An animal-drawn cart is a cart which is attached to one or more working or draught animals.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000608">
+        <rdfs:label xml:lang="en">boat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000613"/>
+        <obo:IAO_0000115>A boat is a watercraft of any size which is able to float or plane on water.</obo:IAO_0000115>
+        <rdfs:comment>Difficult to distinguish from &quot;ships&quot;. Similar to mountains and hills. &quot; In naval terms, a boat is a vessel small enough to be carried aboard another vessel (a ship). Another less restrictive definition is a vessel that can be lifted out of the water. Some definitions do not make a distinction in size, as bulk freighters 1,000 feet (300 m) long on the Great Lakes are called oreboats. For reasons of naval tradition, submarines are usually referred to as &#39;boats&#39; rather than &#39;ships&#39;, regardless of their size and shape.&quot; - https://en.wikipedia.org/wiki/Boat</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000609">
+        <rdfs:label xml:lang="en">motor boat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000601"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000608"/>
+        <oboInOwl:hasExactSynonym>motorized boat</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>motorised boat</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A motor boat is a boat which is propelled by a motor.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000610">
+        <rdfs:label xml:lang="en">motor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000611 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000611">
+        <rdfs:label xml:lang="en">bus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000601"/>
+        <obo:IAO_0000115>A bus is a road vehicle designed to carry many passengers.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000612 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000612">
+        <rdfs:label xml:lang="en">taxicab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000605"/>
+        <oboInOwl:hasExactSynonym>cab</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Depth can be added with specifications of BFO:role for both the car and the human operator.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>taxi</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A taxicab is a car which may be hired, along with its operator, to transport passengers between locations of their choosing.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000613 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000613">
+        <rdfs:label xml:lang="en">watercraft</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <rdfs:comment>Ships, boats, hovercraft and submarines are all considered watercraft. The term would normally imply some propulsive capability (whether by sail, oar or engine) and hence is distinct from a simple device that merely floats, such as a log raft. - Wikipedia</rdfs:comment>
+        <obo:IAO_0000115>A watercraft is a vehicle which is able to travel on or through water.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000614">
+        <rdfs:label xml:lang="en">bicycle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <oboInOwl:hasBroadSynonym>cycle</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>bike</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000115>A bicycle is a human-powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000615">
+        <rdfs:label xml:lang="en">motorcycle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000601"/>
+        <obo:IAO_0000115>A motorcycle is a two- or three-wheeled motor vehicle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>motorbike</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>bike</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>cycle</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>moto</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000616">
+        <rdfs:label xml:lang="en">motorscooter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000615"/>
+        <obo:IAO_0000115>A scooter or motor scooter is a motorcycle with step-through frame and a platform for the rider&#39;s feet.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>scooter</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>motor scooter</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000971 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000971">
+        <rdfs:label xml:lang="en">food truck</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000602"/>
+        <rdfs:comment>Due to the facilities on board, food trucks are often larger than other trucks with comparable mechanics.</rdfs:comment>
+        <obo:IAO_0000115>A truck which is equipped to cook and sell food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000993">
+        <rdfs:label xml:lang="en">manufacturing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001488">
+        <rdfs:label xml:lang="en">aircraft</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-04T19:28:01Z</oboInOwl:creation_date>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-4366-3088</oboInOwl:created_by>
+        <obo:IAO_0000115>A vehicle which is able to travel through air in an atmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_1001178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_1001178">
+        <rdfs:label xml:lang="en">train</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000601"/>
+        <obo:IAO_0000115>A vehicle which uses a motor to impel itself along a track to which its movements are constrained.</obo:IAO_0000115>
+        <rdfs:comment>Conceivably, cable cars and ski lifts are also trains. Further, entities like hand cars (platforms with wheels propelled along train tracks) are usually not considered trains.</rdfs:comment>
+        <obo:IAO_0000116>Definition created on the Shinkansen from Tokyo to Morioka for the 2017 BioHackathon. Contributors to add to xrefs: Seth Carbon and Mark Wilkinson.</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </owl:Class>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+
 
